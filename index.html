@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/home-stylesheet.css">
+        <link rel="stylesheet" href="styles/large-home-stylesheet.css">
+        <title>WDD 231 - Web Frontend Development 1- Katie Hulet</title>
+        <meta name="description" content="Wecome to my WDD 231 course homepage. Here you will find a little information about me and some of the class course I have taken up to this point.">
+        <meta name="author" content="Katie Hulet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <script src ="scripts/home-scripts.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="title">        
+            <img src="images/myself.webp" alt="Picture of me">
+            <h1> Katie Hulet</h1>
+        </div>
+
+        <nav>
+            <div class="menu-text" id="menu-text">Menu</div>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/kaitlin-hulet/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="course-work">
+            <h2>Current Course Work</h2>
+            <ul>
+                <li>WDD 231 - Web Frontend Development 1</li> 
+            </ul>
+
+        </section>
+        <section class="location">
+            <h2>Saratoga Springs, Utah, USA</h2>
+            <figure>
+                <img src="images/utah-lake.webp" alt="Utah Lake">
+                <figcaption>Utah Lake, Utah, USA</figcaption>    
+            </figure>
+            
+        </section>
+        <section class="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <a href="#" id="all-courses">All</a>
+                <a href="#" id="cse-courses">CSE</a>
+                <a href="#" id="wdd-courses">WDD</a>
+            </div>
+            <div id="course-card-container"></div>
+            <div id="total-credits">Total Credits: 0</div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>
+                &#169; <span id="currentyear"></span> | Katie Hulet | Utah
+            </p>
+            <p>
+                Last modified: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
