@@ -25,7 +25,7 @@ async function fetchMemberData() {
             memberCard.classList.add('member-card');
 
             memberCard.innerHTML = `
-                <img src="${member.image}" alt="${member.name}'s image" class="member-image" />
+                <img src="${member.image}" alt="${member.name}'s image" class="member-image" loading="lazy" />
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>

@@ -40,10 +40,6 @@ body {
 }
 
 /* header */
-header {
-    background-color: var(--accent2-color);
-}
-
 .title img {
     width: 75px;
     height: 75px;
@@ -64,6 +60,7 @@ header {
     flex-direction: row;
     padding: 2rem;
     align-items: center;
+    background-color: var(--accent3-color);
 }
 
 .title div {
