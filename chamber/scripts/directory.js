@@ -11,7 +11,7 @@ menuText.addEventListener('click', function() {
 
 async function fetchMemberData() {
     try {
-        const response = await fetch('/chamber/data/members.json');
+        const response = await fetch('../chamber/data/members.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
