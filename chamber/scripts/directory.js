@@ -1,12 +1,3 @@
-// Menu
-
-const menuText = document.getElementById('menu-text');
-const menu = document.getElementById('menu');
-
-menuText.addEventListener('click', function() {
-    menu.classList.toggle('active');
-});
-
 // fetching directory information from json file
 
 async function fetchMemberData() {
@@ -27,9 +18,9 @@ async function fetchMemberData() {
             memberCard.innerHTML = `
                 <img src="${member.image}" alt="${member.name}'s image" class="member-image" loading="lazy" />
                 <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <p><a href="${member.website}" target="_blank">${member.website}</a></p>            
+                <p>Address: ${member.address}</p>
+                <p>Phone: ${member.phone}</p>
+                <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>            
             `;
             
             membersList.appendChild(memberCard);
@@ -52,13 +43,3 @@ document.getElementById("list-view-button").addEventListener("click", function()
     document.getElementById("contact-container").classList.remove("card-view");
     document.getElementById("contact-container").classList.add("list-view");
 });
-
-// gets current date
-const d = new Date();
-let year = d.getFullYear();
-document.getElementById("currentyear").innerHTML = year;
-
-// last modified date
-
-const date = new Date(document.lastModified);
-document.getElementById("lastModified").innerHTML = date;

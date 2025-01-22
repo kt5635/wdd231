@@ -5,6 +5,11 @@
         gap: 2.5rem;
     }
 
+    #directory-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -36,9 +41,22 @@
     nav ul li a:hover {
         border-radius: 25px;
     }
-/* 
-    footer {
-        flex-direction: row;
-    } */
+
+    #directory-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    #directory-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
 }
