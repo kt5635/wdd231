@@ -5,18 +5,9 @@
         gap: 2.5rem;
     }
 
-    #directory-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }
 
 @media only screen and (min-width: 900px) {
-
-    main {
-        display: grid;
-    }
 
     nav {
         padding: 1rem;
@@ -42,10 +33,6 @@
         border-radius: 25px;
     }
 
-    #directory-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -55,8 +42,5 @@
         margin: auto;
     }
 
-    #directory-cards {
-        grid-template-columns: repeat(4, 1fr);
-    }
 
 }
