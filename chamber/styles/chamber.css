@@ -36,6 +36,9 @@ p {
 }
 
 body {
+    background-color: var(--accent1-color);
+}
+main {
     background-color: var(--secondary-color);
 }
 
@@ -115,8 +118,131 @@ nav ul li a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-/* body */
+/* Home page body */
 
+/* hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.join-link-button {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.join-link-button a {
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: .8rem 3rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.join-link-button a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid .2px var(--primary-color);
+}
+
+/* info section */
+
+.info {
+    display: grid;
+}
+
+.events, .current-weather-container, .forecast {
+    background-color: var(--secondary-color);
+    margin: 2rem;
+    border: solid 2px var(--primary-color);
+    border-radius: 15px;
+}
+
+.info div h2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0rem;
+    padding: 2rem;
+    border-radius: 13px 13px 0px 0px;
+    text-align: center;
+}
+
+.events ul {
+    margin: 2rem;
+}
+
+.events li {
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+}
+
+
+
+/* spotlight section */
+#spotlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.spotlight-card a {
+    text-decoration: none;
+    color: var(--accent1-color)
+}
+
+.spotlight-card p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spotlight-card h3 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    align-items: center;    
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: solid 5px var(--primary-color);
+    background-color: var(--accent3-color);
+}
+
+.spotlight-image {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Directory page body */
+
+/* Filter buttons */
 .filter-buttons {
     display: flex;
     flex-direction: row;
@@ -136,22 +262,23 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.filter-buttons a:active{
+.filter-buttons a:active {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: solid .2px var(--primary-color);
 }
 
-.filter-buttons a:hover{
+.filter-buttons a:hover {
     transform: scale(1.1);
 }
 
+/* directory cards */
 #directory-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .member-card a {

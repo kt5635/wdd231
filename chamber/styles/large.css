@@ -5,6 +5,10 @@
         gap: 2.5rem;
     }
 
+    .info {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -31,6 +35,10 @@
 
     nav ul li a:hover {
         border-radius: 25px;
+    }
+
+    .info {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }

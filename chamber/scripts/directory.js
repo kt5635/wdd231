@@ -1,36 +1,34 @@
-// fetching directory information from json file
+// creating member directory cards
 
-async function fetchMemberData() {
-    try {
-        const response = await fetch('../chamber/data/members.json');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
+function createDirectoryCards(members) {
+    const membersList = document.getElementById('directory-cards');
 
-        const data = await response.json();
+    membersList.innerHTML = '';
 
-        const membersList = document.getElementById('directory-cards');
+    members.forEach(member => {
+        const memberCard = document.createElement('div');
+        memberCard.classList.add('member-card');
     
-        data.forEach(member => {
-            const memberCard = document.createElement('div');
-            memberCard.classList.add('member-card');
+        memberCard.innerHTML = `
+            <img src="${member.image}" alt="${member.name}'s image" class="member-image" loading="lazy" />
+            <h3>${member.name}</h3>
+            <p>Address: ${member.address}</p>
+            <p>Phone: ${member.phone}</p>
+            <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>            
+        `;
+        
+        membersList.appendChild(memberCard);
+    });
 
-            memberCard.innerHTML = `
-                <img src="${member.image}" alt="${member.name}'s image" class="member-image" loading="lazy" />
-                <h3>${member.name}</h3>
-                <p>Address: ${member.address}</p>
-                <p>Phone: ${member.phone}</p>
-                <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>            
-            `;
-            
-            membersList.appendChild(memberCard);
-        });
-    } catch (error) {
-        console.error('Error fetching member data:', error);
-    }
 }
 
-window.onload = fetchMemberData
+async function loadMembers() {
+    const memebers = await fetchMemberData();
+    createDirectoryCards(memebers);
+}
+
+
+document.addEventListener('DOMContentLoaded', loadMembers);
 
 // toggle between grid view and list view
 

@@ -3,7 +3,7 @@
         "name": "Village Pizza",
         "address": "Village Pizza, 3545 Ranches Pkwy, Eagle Mountain, UT 84005",
         "phone": "801-789-8455",
-        "website": "https://eatvillagepizza.com/",
+        "website": "https://eatvillagepizza.com",
         "image": "../chamber/images/village-pizza-logo.webp",
         "membership": 2
     },
@@ -21,7 +21,7 @@
         "name": "Lakeside Gymnastics",
         "address": "4095 E Pony Express Parkway, Suite 7, Eagle Mountain, UT 84005",
         "phone": "801-789-3000",
-        "website": "https://www.lakesidegymnast.com/",
+        "website": "https://www.lakesidegymnast.com",
         "image": "../chamber/images/lakeside-gymnastics-logo.webp",
         "membership": 3
     },
@@ -30,7 +30,7 @@
         "name": "Bin Stacks",
         "address": "4517 Osprey Way, Eagle Mountain, UT 84005",
         "phone": "801-901-8224",
-        "website": "https://www.binstacks.com/",
+        "website": "https://www.binstacks.com",
         "image": "../chamber/images/bin-stacks-logo.webp",
         "membership": 1
     },
