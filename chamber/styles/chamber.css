@@ -4,6 +4,7 @@
     --accent1-color: #28577B;
     --accent2-color: #68A4CA;
     --accent3-color: #ceecf5;
+    --transparent-bg: rgb(16, 47, 66, 0.1);
 
     --nav-background-color: #102F42;
     --nav-link-color: #28577B;
@@ -184,6 +185,8 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* events */
+
 .events ul {
     margin: 2rem;
 }
@@ -194,7 +197,55 @@ nav ul li a:hover {
     font-size: 22px;
 }
 
+/* weather */
+#current-weather {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem;
+}
 
+.current-weather-container {
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+}
+
+.current-weather-container img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 1rem;
+    background-color: var(--transparent-bg);
+    border-radius: 15px;
+
+}
+
+.current-weather-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#weather-forecast {
+    margin: 2rem;
+}
+
+.forecast-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    font-weight: bold;
+}
 
 /* spotlight section */
 #spotlight-cards {

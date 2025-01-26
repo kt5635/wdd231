@@ -77,10 +77,12 @@ function displayWeather(weather) {
     const weatherContainer = document.getElementById('current-weather');
     weatherContainer.innerHTML = `
         <img src="http://openweathermap.org/img/wn/${weather.icon}.png" alt="${weather.description}">
-        <p>${weather.temperature}°F</p>
-        <p>${weather.description}</p>
-        <p>High: ${weather.temperatureHigh}°F</p>
-        <p>Humidity: ${weather.humidity}%</p>
+        <div class ="current-weather-text">
+            <p>${weather.temperature}°F</p>
+            <p>${weather.description}</p>
+            <p>High: ${weather.temperatureHigh}°F</p>
+            <p>Humidity: ${weather.humidity}%</p>
+        </div>
     `;
 }
 
@@ -94,8 +96,6 @@ function displayForecast(forecast) {
             <div class="forecast-day">
                 <p>${day.day}:</p>
                 <p>${day.temperature}°F</p>
-                <p>Description: ${day.description}</p>
-                <img src="http://openweathermap.org/img/wn/${day.icon}.png" alt="${day.description}">
             </div>
         `;
     });
