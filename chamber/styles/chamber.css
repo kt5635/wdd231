@@ -224,7 +224,7 @@ nav ul li a:hover {
 .current-weather-text {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: start;
     gap: 1rem;
     color: var(--primary-color);
     font-family: var(--paragraph-font);
