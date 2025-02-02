@@ -412,7 +412,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: .5rem;
-    align-items: top;
+    align-items: flex-start;
 }
 
 #benefit-container {
@@ -447,7 +447,7 @@ nav ul li a:hover {
         font-size: 22px;
     }
     100% {
-        font-family: 36px;
+        font-size: 36px;
     }
     
 }
@@ -567,7 +567,7 @@ input::placeholder {
     text-align: center;
 }
 
-input[type="text"], input[type="email"], textarea, button, select, input[type="telephone"] {
+input[type="text"], input[type="email"], textarea, button, select, input[type="tel"] {
     width: 100%;
     padding: .6rem;
     margin: .5rem 0;

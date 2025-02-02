@@ -2,23 +2,24 @@
 
 window.addEventListener('load', function() {
 
-    const formData = JSON.parse(localStorage.getItem('formData'));
+    const params = new URLSearchParams(window.location.search);
 
-    if (formData) {
+    const fname = params.get('fname');
+    const lname = params.get('lname');
+    const email = params.get('email');
+    const phone = params.get('phone');
+    const businessName = params.get('business-name');
+    const timestamp = params.get('timestamp');
 
-        document.getElementById('thank-you-message').innerHTML = `
-            <h1>Thank you ${formData.fname} ${formData.lname} for your application!</h1>
-            <h2>We are processing your information</h2>
-            <p><strong>Email:</strong> ${formData.email}</p>
-            <p><strong>Phone:</strong> ${formData.phone}</p>
-            <p><strong>Business Name:</strong> ${formData['business-name']} 
-            <p>${new Date(parseInt(formData.timestamp))}</p>
-        `;
-    } else {
+    const formattedTimestamp = timestamp ? new Date(parseInt(timestamp)).toLocaleString() : "N/A";
 
-        document.getElementById('thank-you-message').innerHTML = `
-            <h1>Thank you for your application!</h1>
-            <h2>We encountered an issue while processing your data.</h2>
-        `;
-    }
-}); 
+
+    document.getElementById('thank-you-message').innerHTML = `
+        <h1>Thank you ${fname} for your application!</h1>
+        <h2>We are processing your application with the following information:</h2>
+        <p><strong>Name:</strong> ${fname} ${lname}</p>
+        <p><strong>Email:</strong> ${email} | <strong>Phone:</strong> ${phone}</p>
+        <p><strong>Business Name:</strong> ${businessName}</p>
+        <p><strong>Timestamp:</strong> ${formattedTimestamp}</p>
+    `;
+});

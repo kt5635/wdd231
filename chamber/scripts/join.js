@@ -119,9 +119,9 @@ document.getElementById('application-form').addEventListener('submit', function(
         formDataObj[key] = value;
     });
 
-    localStorage.setItem('formData', JSON.stringify(formDataObj));
+    const queryString = new URLSearchParams(formDataObj).toString();
+
+    window.location.href = `thankyou.html?${queryString}`;
 
     form.reset();
-
-    window.location.href = "thankyou.html"
 });
