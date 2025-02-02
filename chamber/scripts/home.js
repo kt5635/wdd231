@@ -13,7 +13,10 @@ const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&
 // Fetch current weather data
 async function fetchWeather() {
     try {
-        const response = await fetch(currentWeatherUrl);
+        const response = await fetch(currentWeatherUrl, {
+            headers: {'Accept-Encoding': 'gzip, deflate, br',
+            }
+        });
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
