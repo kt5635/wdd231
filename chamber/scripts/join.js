@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-// saving form data in local storage to display it on thank you page after submission
+// saving form data to display it on thank you page after submission
 document.getElementById('application-form').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
