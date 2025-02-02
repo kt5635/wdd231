@@ -20,6 +20,6 @@ window.addEventListener('load', function() {
         <p><strong>Name:</strong> ${fname} ${lname}</p>
         <p><strong>Email:</strong> ${email} | <strong>Phone:</strong> ${phone}</p>
         <p><strong>Business Name:</strong> ${businessName}</p>
-        <p><strong>Timestamp:</strong> ${formattedTimestamp}</p>
+        <p>${formattedTimestamp}</p>
     `;
 });
