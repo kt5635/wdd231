@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lake Mountain Chamber of Commerce Directory</title>
-        <meta name="description" content="Directory for the chamber of commerce website. WDD 231">
+        <title>Lake Mountain Chamber of Commerce Discovery</title>
+        <meta name="description" content="">
         <meta name="author" content="Katie Morris">
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Chamber of Commerce: WD 231 -Katie Morris" />
-        <meta property="og:description" content="Directory for the chamber of commerce website. WDD 231" />
+        <meta property="og:description" content="" />
         <meta property="og:image" content="https://raw.githubusercontent.com/kt5635/wdd231/refs/heads/main/chamber/images/hero-img.webp" /> 
         <meta property="og:url" content="https://kt5635.github.io/wdd231/chamber/index.html" /> 
         <link rel="stylesheet" href="../chamber/styles/normalize.css">
@@ -18,6 +18,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   
         <link rel="icon" href="../chamber/images/favicon.ico">
+        <script src="../chamber/scripts/base.js" defer></script>
+        <script src="../chamber/scripts/thankyou.js" defer></script>
     </head>
 <body>
     <header>
@@ -27,8 +29,8 @@
                 <h1>Lake Mountain</h1>
                 <h2>Chamber of Commerce</h2>
             </div>
-
         </div>
+
         <nav>
             <div class="menu-text" id="menu-text">Menu</div>
             <ul id="menu" class="menu">
@@ -42,13 +44,7 @@
     </header>
 
     <main>
-        <div class="filter-buttons">
-            <a href="#" id="card-view-button">Grid</a>
-            <a href="#" id="list-view-button">List</a>
-        </div>
-        <div id="contact-container" class="card-view">
-            <div id="directory-cards"></div>
-        </div>
+        <div id="thank-you-message"></div>
 
     </main>
     
@@ -79,7 +75,6 @@
             </p>
         </div>
     </footer>
-    <script src="../chamber/scripts/base.js" defer></script> 
-    <script src="../chamber/scripts/directory.js" defer></script> 
+
 </body>
 </html>

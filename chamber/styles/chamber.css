@@ -398,6 +398,222 @@ nav ul li a:hover {
     margin-right: 1rem; 
 }
 
+/* join page */
+
+.member-application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.join-chamber-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    align-items: top;
+}
+
+#benefit-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.benefit-card p {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.benefit-card h3 {
+    font-size:36px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.benefit-card.animate h3 {
+    animation: enlargeText 5s forwards;
+}
+
+@keyframes enlargeText {
+    0% {
+        font-size: 22px;
+    }
+    100% {
+        font-family: 36px;
+    }
+    
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    align-items: center;    
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: solid 5px var(--primary-color);
+    background-color: var(--accent3-color);
+}
+
+.more-info-btn {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: auto; 
+    background-color: rgba(224, 209, 205, 0.5); 
+}
+
+.benefit-info-content {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    width: 50%; 
+    text-align: center;
+}
+
+.level-benefits p {
+    font-family: var(--paragraph-font);
+}
+
+.benefit-info-content ul {
+    list-style-type: none;
+    margin: 0%;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    padding: 1rem;
+}
+
+.close {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    transform: scale(1.2);
+}
+
+/* thank you page */
+
+#thank-you-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#thank-you-message h2 {
+    margin: .1rem;
+    padding-bottom: 1rem;
+}
+
+#thank-you-message p {
+    margin:  .3rem;
+}
+
+/* Form Styles */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    background-color: var(--accent3-color);
+    border-radius: 30px;
+    padding: 2rem;
+    margin: 2rem;
+    border: solid 5px var(--primary-color);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    color: rgb(102, 142, 167); 
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea, button, select, input[type="telephone"] {
+    width: 100%;
+    padding: .6rem;
+    margin: .5rem 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+select {
+    cursor: pointer;
+    text-align: center;
+}
+
+select option {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+
+}
+
+select option:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+textarea {
+    height: 150px; 
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    width: 70%;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
 
 /* footer */
 footer {
