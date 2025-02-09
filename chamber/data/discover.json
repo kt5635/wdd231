@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "Saratoga Hot Springs",
+        "address": "625 Saratoga Dr, Saratoga Springs, UT 84045",
+        "description": "The Saratoga Hot Springs, located just off the northwest side of Utah Lake is a perfectly heated hot springs. The hot springs have easy parking and are open all year round.",
+        "image": "../chamber/images/hot-springs (1).webp",
+        "website": "https://www.saratogasprings-ut.gov/facilities/facility/details/Inlet-Park-6"
+    },
+
+    {
+        "Name": "Thanksgiving Point",
+        "address": "3003 Thanksgiving Wy, Lehi, UT 84043",
+        "description": "Thanksgiving Point is a 501 non-profit indoor and outdoor farm, garden, and museum complex in Lehi, Utah, United States. Its five main attractions include Ashton Gardens, Butterfly Biosphere, Farm Country, Museum of Ancient Life, and Museum of Natural Curiosity. ",
+        "image": "../chamber/images/thanksgiving-point.webp",
+        "website": "https://thanksgivingpoint.org/"
+    },
+
+    {
+        "Name": "Saratoga Springs Marina",
+        "address": "1566 Harbor Park Way, Saratoga Springs, UT 84045",
+        "description": "Welcome to Saratoga Springs Marina, the ultimate lakeside adventure destination in Lehi, Utah! Nestled on the picturesque shores of Utah Lake, this marina offers a wide range of activities and amenities for water enthusiasts of all ages.",
+        "image": "../chamber/images/marina.webp",
+        "website": "https://www.saratogasprings-ut.gov/facilities/facility/details/Marina-Park-12"
+    },
+
+    {
+        "Name": "Israel Canyon Trailhead",
+        "address": "424-438 W Stillwater Dr, Saratoga Springs, UT 84045",
+        "description": "Discover this 14.3-km out-and-back trail near Saratoga Springs, Utah. Generally considered a challenging route, it takes an average of 5 h 30 min to complete. This is a popular trail for cross-country skiing, hiking, and horseback riding, but you can still enjoy some solitude during quieter times of day. The trail is open year-round and is beautiful to visit anytime. Dogs are welcome and may be off-leash in some areas.",
+        "image": "../chamber/images/israel-canyon-trail.webp",
+        "website": "https://www.alltrails.com/trail/us/utah/israel-canyon-trail"
+    },
+
+    {
+        "Name": "Saratoga Springs Utah Temple",
+        "address": "987 South Ensign Drive, Saratoga Springs, Utah  84045",
+        "description": "The Saratoga Springs Utah Temple and an adjoining meetinghouse stand on an expansive 22.71-acre site near the western shores of Utah Lake at the end of tree-lined Founders Boulevard.",
+        "image": "../chamber/images/saratoga-springs-utah-temple.webp",
+        "website": "https://churchofjesuschristtemples.org/saratoga-springs-utah-temple/"
+    },
+
+    {
+        "Name": "Timpanogos Cave National Monument",
+        "address": "2038 E Alpine Lp Rd, American Fork, UT 84003",
+        "description": "Hike your way past stunning vistas to explore a hidden underground world. Taste the thrill of caving as you twist and bend to enter beautifully decorated rooms. Learn the science behind formations and hear stories of cave exploration and preservation. Experience and discover as you go – geologic mysteries await.",
+        "image": "../chamber/images/timpanogos-cave.webp",
+        "website": "https://www.nps.gov/tica/index.htm"
+    },
+
+    {
+        "Name": "Loveland Living Planet Aquaruim",
+        "address": "12033 Lone Peak Pkwy, Draper, UT 84020",
+        "description": "The Loveland Living Planet Aquarium is a public aquarium located in Draper, Utah, United States. It houses 4,500 animals representing 550 species, and it consists of five main exhibits.",
+        "image": "../chamber/images/aquaruim.webp",
+        "website": "https://livingplanetaquarium.org/"
+    },
+
+    {
+        "Name": "Fat Cats",
+        "address": "212 Pioneer Crossing, Saratoga Springs, UT 84045",
+        "description": "FatCats in Saratoga Springs, Utah is a family-friendly entertainment center with bowling, a movie theater, an arcade, and a restaurant. It's a great place for birthdays, family gatherings, and other celebrations.",
+        "image": "../chamber/images/fat-cats.webp",
+        "website": "https://www.fatcatsfun.com/locations/saratoga-springs/"
+    }
+]

@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 641px) {
     .filter-buttons {
         justify-content: center;
         gap: 2.5rem;
@@ -11,7 +11,7 @@
 
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
 
     nav {
         padding: 1rem;
