@@ -103,6 +103,7 @@ nav ul {
 
 nav ul.active {
     display: flex;
+
 }
 
 nav ul li a {
@@ -615,9 +616,63 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* discove page */
+/* discover page */
 
+/* discover cards */
 
+#discover-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.attraction-card a {
+    text-decoration: none;
+    color: var(--accent1-color)
+}
+
+.attraction-card p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.attraction-card h2 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.attraction-card figcaption, .attraction-card address {
+    text-align: center;
+    font-size: 18px;
+    padding: 2px;
+    font-family: var(--paragraph-font);
+}
+
+.attraction-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    align-items: center;    
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: solid 5px var(--primary-color);
+    background-color: var(--accent3-color);
+}
+
+.attraction-image {
+    max-width: 300px;
+    height: auto;
+}
+
+.learn-more {
+    margin: 2rem;
+}
 
 /* footer */
 footer {
