@@ -9,6 +9,24 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .attraction-card {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "name name"
+        "image description"
+        "image address"
+        "button button";
+    }
+
+    .attraction-image {
+        transition: transform 0.5s ease;
+    }
+
+    .attraction-image:hover {
+        transform: scaleX(-1);
+
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -43,6 +61,11 @@
 
     .join-chamber-container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    #discover-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
 }

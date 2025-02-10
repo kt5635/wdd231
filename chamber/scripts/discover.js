@@ -52,5 +52,46 @@ async function loadAttractions() {
     createDiscoveryCards(attractions);
 }
 
+// get dates and display pop up message based on when the visiter last visted the page
+
+function getDaysBetweenDates(date1, date2) {
+    const timeDifference = date2-date1;
+    const oneDay = 1000 * 60 *60 *24;
+    return Math.floor(timeDifference / oneDay)
+}
+
+function showLastVisitMessage() {
+    const modal = document.getElementById("visitModal");
+    const messageDiv = document.getElementById('visitMessage');
+    const lastVisitDate = localStorage.getItem('lastVisitDate');
+
+    if (!lastVisitDate) {
+        messageDiv.textContent = 'Welcome! Let us know if you have any questions.';
+        localStorage.setItem('lastVisitDate', new Date().toString());
+    } else {
+        const currentDate = new Date();
+        const lastVisit = new Date(lastVisitDate);
+        const daysSinceLastVisit = getDaysBetweenDates(lastVisit, currentDate);
+
+        if (daysSinceLastVisit < 1) {
+            messageDiv.textContent = 'Back so soon! Awesome!';
+        } else {
+            const daytext = daysSinceLastVisit === 1 ? 'day' :'days';
+            messageDiv.textContent = `You last visited ${daysSinceLastVisit} ${daytext} ago.`;
+        }
+
+        localStorage.setItem('lastVisitDate', currentDate.toString());
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('visitModal').style.display = 'none';
+ }
+
+document.getElementById('closeModal').addEventListener('click', closeModal);
 
 document.addEventListener('DOMContentLoaded', loadAttractions);
+
+window.onload = showLastVisitMessage;

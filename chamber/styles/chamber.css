@@ -45,7 +45,7 @@ main {
 
 /* header */
 .title img {
-    width: 325px;
+    width: 350px;
     height: 150px;
 }
 
@@ -278,8 +278,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
-    align-items: center;    
+    max-width: 300px;  
     margin: 1rem;
     padding: 1rem;
     border-radius: 2rem;
@@ -355,7 +354,6 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     max-width: 300px;
-    align-items: center;    
     margin: 1rem;
     padding: 1rem;
     border-radius: 2rem;
@@ -457,8 +455,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    align-items: center;    
+    width: 500px;  
     margin: 1rem;
     padding: 2rem;
     border-radius: 2rem;
@@ -479,7 +476,7 @@ nav ul li a:hover {
     left: 0;
     top: 0;
     width: 100%; 
-    height: auto; 
+    height: 100vh; 
     background-color: rgba(224, 209, 205, 0.5); 
 }
 
@@ -600,7 +597,7 @@ textarea {
     resize: vertical;
 }
 
-button {
+.submit-button {
     cursor: pointer;
     text-align: center;
     width: 70%;
@@ -612,8 +609,12 @@ button {
     border: solid 1px var(--primary-color);
 }
 
-button:hover {
+.submit-button:hover {
     transform: scale(1.1);
+}
+
+.more-info-btn:hover {
+    transform: scale(1.05);
 }
 
 /* discover page */
@@ -621,11 +622,29 @@ button:hover {
 /* discover cards */
 
 #discover-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     padding-bottom: 4rem;
+    gap: 5rem;
+}
+
+.attraction-card {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: solid 5px var(--primary-color);
+    background-color: var(--accent3-color);
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
 }
 
 .attraction-card a {
@@ -637,12 +656,15 @@ button:hover {
     font-size: 18px;
     text-align: center;
     font-weight: bold;
+    padding: 1rem;
+    grid-area: description;
 }
 
 .attraction-card h2 {
     font-size: 26px;
     text-align: center;
     font-weight: bold;
+    grid-area: name;
 }
 
 .attraction-card figcaption, .attraction-card address {
@@ -650,28 +672,61 @@ button:hover {
     font-size: 18px;
     padding: 2px;
     font-family: var(--paragraph-font);
+    grid-area: address;
 }
 
-.attraction-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    align-items: center;    
-    margin: 1rem;
+.attraction-card address {
     padding: 1rem;
-    border-radius: 2rem;
-    border: solid 5px var(--primary-color);
-    background-color: var(--accent3-color);
 }
 
 .attraction-image {
     max-width: 300px;
     height: auto;
+    grid-area: image;
 }
 
 .learn-more {
-    margin: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 70%;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+    grid-area: button;
+}
+
+.learn-more:hover {
+    transform: scale(1.1);
+}
+
+/* last visit pop up */
+
+.visit-modal-content {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    width: 50%; 
+    text-align: center;
+    font-size: 25px;
+}
+
+#closeModal {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    transform: scale(1.2);
 }
 
 /* footer */
