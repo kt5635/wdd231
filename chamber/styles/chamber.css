@@ -621,6 +621,11 @@ textarea {
 
 /* discover cards */
 
+.discover-title {
+    padding: 2rem;
+    text-align: center;
+}
+
 #discover-cards {
     display: grid;
     grid-template-columns: 1fr;
