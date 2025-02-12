@@ -1,0 +1,56 @@
+[
+    {
+        "image": "images/k-step1.webp",
+        "phase": "Step 1",
+        "description": "cut five pieces of ribbon, 3 inches in length"
+    },
+
+    {
+        "image": "images/step2.webp",
+        "phase": 2,
+        "description": "Melt raw edges of ribbon with lighter or candle to prevent fraying"
+    },
+
+    {
+        "image": "images/k-step3.webp",
+        "phase": 3,
+        "description": "Lay ribbon horizontal. Fold top corner down to the middle and pin. Repeat with other courner"
+    },
+
+    {
+        "image": "images/k-step4.webp",
+        "phase": 4,
+        "description": "Fold ribbon again using the bottom corner up to the middle and pin. Repeat with other courner"
+    },
+
+    {
+        "image": "images/k-step5.webp",
+        "phase": 5,
+        "description": "hread needle and sew along bottom edge, starting on the right outside corner, using a weaving stitch. Continue acrros the folded ribbon, matching stitch placement. Pull tight and tie off thread"
+    },
+
+    {
+        "image": "images/k-step6.webp",
+        "phase": 6,
+        "description": "Repeat with all petals. The same thread can be used for all petals. Once all petals are threaded, tie last petal to first petal to make flower"
+    },
+
+    {
+        "image": "images/k-step7.webp",
+        "phase": 7,
+        "description": "To create pointed petals, pinch top of petal and melt the back edges together with a lighter or candel"
+    },
+
+    {
+        "image": "images/k-step8.webp",
+        "phase": 8,
+        "description": "Cut a round piece of felt and using the hot glue gun, attach felt to the back of flower to cover edges"
+    },
+
+    {
+        "image": "images/k-step9.webp",
+        "phase": 9,
+        "description": "Using a hot glue gun, glue button or embellishment on the center of the flower to finish"
+    }
+]
+

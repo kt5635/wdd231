@@ -1,0 +1,57 @@
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 900px) {
+
+    nav ul {
+        display: flex; 
+        justify-content: space-between; 
+        flex-direction: row;
+        margin: 2rem;
+    }
+
+    nav ul li a {
+        background-color: var(--primary-color);
+        text-align: center;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    nav ul li a {
+        background-color: var(--primary-color);
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        border-radius: 30px;
+    }
+
+    li.dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    li.dropdown.active .dropdown-content {
+        display: none;
+    }
+ 
+    .supply-list ul {
+        column-count: 2;  
+        column-gap: 2rem; 
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .svg-background {
+        width: 50%;
+    }
+
+    body {
+        max-width: 1600px;
+        margin: auto;
+    }
+}

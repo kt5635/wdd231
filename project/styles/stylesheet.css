@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #F7F4F2;
+    --secondary-color: #3A3743;
+    --accent1-color: #E0D2CD;
+    --accent2-color: #D5C3C9;
+    --accent3-color: #B8B2BD;
+
+    --nav-background-color: #F7F4F2;
+    --nav-link-color:#3A3743;
+    --nav-hover-link-color: #3A3743;
+    --nav-hover-background-color: #B8B2BD;
+
+    --heading-font: 'Crimson Pro', serif;
+    --paragraph-font: 'Nunito', sans-serif;
+}
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+  }
+
+  .crimson-pro {
+    font-family: "Crimson Pro", serif;
+    font-style: normal;
+  }
+
+  /* Header and Nav */
+
+  header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: solid .3rem var(--secondary-color);
+  }
+
+  .svg-background {
+    padding: 0rem;
+    max-width: 650px;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/mtdream-logo.svg');
+    background-size: cover;
+    background-position: center 25%;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-family: var(--paragraph-font);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column; 
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: var(--primary-color);
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+.menu-text {
+    display: block; 
+    cursor: pointer;
+    font-size: 25px;
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+nav ul li a {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--nav-background-color);
+    min-width: 200px;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li.dropdown.active .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    float: none;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    color: var(--secondary-color);
+    text-align: left;
+    background-color: var(--accent2-color);
+}
+
+.dropdown-content li a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+li.dropdown .dropdown-content li.dropdown:hover .dropdown-content {
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 38px;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+/* main body css */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+  }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+    text-align: center;
+}
+
+/* tutorial page */
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+    text-align: center;
+}
+
+.tutorial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#tutorial-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1rem;
+    max-width: 300px;
+    width: 100%;
+    background-color: var(--accent3-color);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.supply-list ul {
+    list-style-type: circle;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+}
+
+.tutorial-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px;
+}
+
+#tutorial-cards h2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#tutorial-cards p {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}

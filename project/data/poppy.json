@@ -1,0 +1,37 @@
+[
+    {
+        "image": "images/simple-step1.webp",
+        "phase": 1,
+        "description": "Cut one piece of ribbon, 8 inch in length"
+    },
+
+    {
+        "image": "images/step2.webp",
+        "phase": 2,
+        "description": "Melt raw edges of ribbon with lighter or candle to prevent fraying"
+    },
+
+    {
+        "image": "images/simple-step3.webp",
+        "phase": 3,
+        "description": "Lay ribbon horizontal. Thread needle, starting at one end, sew along edge using a weaving stitch"
+    },
+
+    {
+        "image": "images/simple-step4.webp",
+        "phase": 4,
+        "description": "Pull tight and tie off end. Attach two ends together to form a flower"
+    },
+
+    {
+        "image": "images/simple-step5.webp",
+        "phase": 5,
+        "description": "Cut a round piece of felt and using the hot glue gun, attach felt to the back of flower to cover edges"
+    },
+
+    {
+        "image": "images/simple-step6.webp",
+        "phase": 6,
+        "description": "Using a hot glue gun, glue button or embellishment on the center of the flower to finish"
+    }
+]
