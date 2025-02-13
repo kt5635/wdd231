@@ -1,0 +1,171 @@
+[
+    {
+        "name": "Summer Flowers",
+        "type": "Vinyl",
+        "color": "Multi",
+        "amount": 2,
+        "measure": "rolls",
+        "image": "project\images\summer-flowers.webp",
+        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+    },
+
+    {
+        "name": "Fluidity",
+        "type": "Vinyl",
+        "color": "Silver",
+        "amount": 1,
+        "measure": "rolls",
+        "image": "project\images\silver-fulidity.webp",
+        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+    },
+
+    {
+        "name": "Star Dust",
+        "type": "Vinyl",
+        "color": "Pink",
+        "amount": 1,
+        "measure": "rolls",
+        "image": "project\images\hotpink-stardust.webp",
+        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+    },
+
+    {
+        "name": "Geo Glitter",
+        "type": "Vinyl",
+        "color": "Pink",
+        "amount": 1,
+        "measure": "rolls",
+        "image": "project\images\pink-geoglitter.webp",
+        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+    },
+
+    {
+        "name": "3/4 inch D Ring",
+        "type": "Hardware",
+        "color": "Silver",
+        "amount": 86,
+        "measure": "Pieces",
+        "image": "project\images\silver-.75drings.webp",
+        "usage": ["Purse", "wrist strap"]
+    },
+
+    {
+        "name": "3/4 inch D Ring",
+        "type": "Hardware",
+        "color": "Gold",
+        "amount": 86,
+        "measure": "Pieces",
+        "image": "project\images\gold-.75drings.webp",
+        "usage": ["Purse", "wrist strap"]
+    },
+
+    {
+        "name": "3/4 inch Lobster Clasp",
+        "type": "Hardware",
+        "color": "Gold",
+        "amount": 37,
+        "measure": "Pieces",
+        "image": "project\images\gold-.75lobster-clasp.webp",
+        "usage": ["Purse", "Clutch", "hand sanitizer holder"]
+    },
+
+    {
+        "name": "3/4 inch Lobster Clasp",
+        "type": "Hardware",
+        "color": "Sliver",
+        "amount": 61,
+        "measure": "Pieces",
+        "image": "project\images\silver-.75lobster-clasp.webp",
+        "usage": ["Purse", "Clutch", "hand sanitizer holder"]
+    },
+
+    {
+        "name": "Felt",
+        "type": "Felt",
+        "color": "White",
+        "amount": 23,
+        "measure": "Sheets",
+        "image": "project\images\white-felt.webp",
+        "usage": ["Finger Puppets", "Crafts", "Hairbows"]
+    },
+
+    {
+        "name": "Felt",
+        "type": "Felt",
+        "color": "Green",
+        "amount": 5,
+        "measure": "Sheets",
+        "image": "project\images\green-felt.webp",
+        "usage": ["Finger Puppets", "Crafts", "Hairbows"]
+    },
+
+    {
+        "name": "Felt",
+        "type": "Felt",
+        "color": "Blue",
+        "amount": 3,
+        "measure": "Sheets",
+        "image": "project\images\blue-felt.webp",
+        "usage": ["Finger Puppets", "Crafts", "Hairbows"]
+    },
+
+    {
+        "name": "1.5 Inch Satin Ribbon",
+        "type": "Ribbon",
+        "color": "Red",
+        "amount": 2,
+        "measure": "Spool",
+        "image": "project\images\red-ribbon.webp",
+        "usage": ["Crafts", "Hairbows"]
+    },
+
+    {
+        "name": "1.5 Inch Satin Ribbon",
+        "type": "Ribbon",
+        "color": "Black",
+        "amount": 2,
+        "measure": "Spool",
+        "image": "../project/images/black-ribbon.webp",
+        "usage": ["Crafts", "Hairbows"]
+    },
+
+    {
+        "name": "1.5 Inch Satin Ribbon",
+        "type": "Ribbon",
+        "color": "White",
+        "amount": 2,
+        "measure": "Spool",
+        "image": "project\images\white-ribbon.webp",
+        "usage": ["Crafts", "Hairbows"]
+    },
+
+    {
+        "name": "Yarn",
+        "type": "Yarn",
+        "color": "White",
+        "amount": 1,
+        "measure": "Skein",
+        "image": "project\images\white-yarn.webp",
+        "usage": ["knitting", "chrochet"]
+    },
+
+    {
+        "name": "Yarn",
+        "type": "Yarn",
+        "color": "Blue",
+        "amount": 1,
+        "measure": "Skein",
+        "image": "project\images\blue-yarn.webp",
+        "usage": ["knitting", "chrochet"]
+    },
+
+    {
+        "name": "Yarn",
+        "type": "Yarn",
+        "color": "Red",
+        "amount": 1,
+        "measure": "Skein",
+        "image": "project\images\red-yarn.webp",
+        "usage": ["knitting", "chrochet"]
+    }
+]
