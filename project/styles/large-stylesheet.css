@@ -1,4 +1,7 @@
 @media only screen and (min-width: 600px) {
+    .pattern-container div {
+        max-width: 500px;
+    }
     
 }
 
@@ -36,10 +39,24 @@
     li.dropdown.active .dropdown-content {
         display: none;
     }
+
+    .inventory-buttons {
+        flex-direction: row;
+    }
  
     .supply-list ul {
         column-count: 2;  
         column-gap: 2rem; 
+    }
+
+    .pattern-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem;
+    }
+
+    .current {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -53,5 +70,13 @@
     body {
         max-width: 1600px;
         margin: auto;
+    }
+
+    .pattern-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pattern-container div {
+        max-width: 1200px;
     }
 }

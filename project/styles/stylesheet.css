@@ -188,6 +188,128 @@ p {
     margin: 4rem;
     text-align: center;
 }
+/* homepage */
+
+section h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+    text-align: center;
+}
+
+/* inventory section */
+.inventory-buttons {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory-buttons a {
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 20rem;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 30px;
+}
+
+.inventory-buttons a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* patterns section */
+
+/* card formating */
+
+.pattern-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.pattern-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(224, 209, 205, 0.1);
+    text-align: center;
+    background-color: var(--accent3-color);
+}
+
+.pattern-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pattern-card h2 {
+    font-size: 1.7em;
+    margin: 10px 0;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+.pattern-card p {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+.pattern-card .difficulty {
+    font-weight: bold;
+}
+
+.pattern-card a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: .5rem;
+    font-family: var(--paragraph-font);
+}
+
+.pattern-card a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 1rem;
+
+}
+
+
+/* current sections */
+.current {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.current-projects, .current-shopping {
+    background-color: var(--accent3-color);
+    margin: 2rem;
+    text-align: center;
+
+}
+
+.current-projects ul, .current-shopping ul {
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    list-style-type: none;
+}
+
 
 /* tutorial page */
 
