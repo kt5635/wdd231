@@ -1,5 +1,27 @@
 //Fetching tutorial information from kanzashi json files
 
+// create tutorial step cards
+
+function createTuturoialCards(steps) {
+    const stepsList = document.getElementById('tutorial-cards');
+
+    stepsList.innerHTML = '';
+
+    steps.forEach(step => {
+        const stepCard = document.createElement('div');
+        stepCard.classList.add('step-card');
+
+        stepCard.innerHTML = `
+            <img src="${step.image}" alt="Step ${step.phase}" class="tutorial-img" loading="lazy" />
+            <h2>Step ${step.phase}</h2>
+            <p>${step.description}</p>
+        `;
+
+        stepsList.appendChild(stepCard);
+    });
+
+}
+
 async function fetchKanzashiTutorialData() {
     console.log("Fetching tutorial data...");
 

@@ -43,6 +43,7 @@
     background-image: url('../images/mtdream-logo.svg');
     background-size: cover;
     background-position: center 25%;
+    cursor: pointer;
 }
 
 nav {
@@ -147,7 +148,7 @@ h1 {
     color: var(--secondary-color);
 }
 
-h2 {
+h2, h3 {
     font-family: var(--heading-font);
     font-size: 30px;
     color: var(--secondary-color);
@@ -229,6 +230,7 @@ section h2 {
 /* patterns section */
 
 /* card formating */
+
 
 .pattern-card-container {
     display: flex;
@@ -365,6 +367,164 @@ section h2 {
     grid-column: 2;
     grid-row: 2;
 }
+
+/* Inventory page */
+/* inventory buttons */
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 20rem;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 30px;
+    border: none;
+}
+
+button:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* popup forms */
+.popup-form {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 10% auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    color: var(--secondary-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+button[type="submit"] {
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 20rem;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+
+/* inventory cards */
+
+.view-inventory-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.inventory-card {
+    display: grid;
+    align-items: center;
+    flex: 1rem;
+    max-width: 300px;
+    width: 100%;
+    background-color: var(--accent3-color);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 30px;
+    grid-template-areas: 
+    "image"
+    "name"
+    "amount"
+    "usage"
+    "list";
+}
+
+.inventory-card h3 {
+    grid-area: usage;
+    text-align: center;
+}
+
+.inventory-card ul {
+    list-style-type: circle;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    grid-area: list;
+    margin-top: 0px;
+}
+
+.inventory-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    border-radius: 30px;
+    grid-area: image;
+}
+
+.inventory-card h2 {
+    grid-area: name;
+    margin: .5rem 0rem;
+
+}
+
+.inventory-card p {
+    grid-area: amount;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+
 
 /* footer */
 

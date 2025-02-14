@@ -59,6 +59,15 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .inventory-card {    
+        max-width: 600px;
+        grid-template-areas: 
+        "image name"
+        "image amount"
+        "image usage"
+        "image list";
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -79,4 +88,10 @@
     .pattern-container div {
         max-width: 1200px;
     }
+
+    .view-inventory-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
