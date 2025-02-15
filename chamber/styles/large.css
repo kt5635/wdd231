@@ -10,7 +10,7 @@
     }
 
     .attraction-card {
-        grid-template-columns: 1fr 2fr;
+        align-items: start;
         grid-template-areas: 
         "name name"
         "image description"
@@ -64,8 +64,9 @@
     }
 
     #discover-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "card card";
     }
 
 }

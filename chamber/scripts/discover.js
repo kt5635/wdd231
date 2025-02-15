@@ -1,10 +1,10 @@
 // fetching discovery data from json file
 
-async function fetchAttractionData() {
+async function fetchDiscoverData() {
     console.log("Fetching attraction data...");
     
     try {
-        const response = await fetch('../chamber/data/attractions.json');
+        const response = await fetch('../chamber/data/discover.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -27,10 +27,10 @@ function createDiscoveryCards(attractions) {
     attractionsList.innerHTML = '';
 
     attractions.forEach(attraction => {
-        const attractionCard = document.createElement('div');
-        attractionCard.classList.add('attraction-card');
+        const discoverCard = document.createElement('div');
+        discoverCard.classList.add('attraction-card');
     
-        attractionCard.innerHTML = `
+        discoverCard.innerHTML = `
             <h2>${attraction.name}</h2>
             <figure>
                 <img src="${attraction.image}" alt="${attraction.name}'s image" class="attraction-image" loading="lazy">
@@ -42,13 +42,13 @@ function createDiscoveryCards(attractions) {
             <button class="learn-more" onclick="window.open('${attraction.website}', '_blank')">Learn More</button>
         `;
         
-        attractionsList.appendChild(attractionCard);
+        attractionsList.appendChild(discoverCard);
     });
 
 }
 
 async function loadAttractions() {
-    const attractions = await fetchAttractionData();
+    const attractions = await fetchDiscoverData();
     createDiscoveryCards(attractions);
 }
 

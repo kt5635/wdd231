@@ -629,9 +629,11 @@ textarea {
 #discover-cards {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas: 
+    "card";
     justify-items: center;
     padding-bottom: 4rem;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .attraction-card {
