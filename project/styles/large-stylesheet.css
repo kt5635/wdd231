@@ -28,18 +28,6 @@
         text-align: center;
     }
 
-    nav ul li a:hover {
-        border-radius: 30px;
-    }
-
-    li.dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    li.dropdown.active .dropdown-content {
-        display: none;
-    }
-
     .inventory-buttons {
         flex-direction: row;
     }
@@ -49,23 +37,25 @@
         column-gap: 2rem; 
     }
 
-    .pattern-card-container {
-        display: grid;
+    .current {
         grid-template-columns: repeat(2, 1fr);
-        margin: 2rem;
     }
 
-    .current {
+    .pattern-card-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .inventory-card {    
         max-width: 600px;
         grid-template-areas: 
-        "image name"
+        "name name"
         "image amount"
         "image usage"
         "image list";
+    }
+
+    .popup-content {
+        width: 500px;
     }
 
 }
@@ -89,9 +79,10 @@
         max-width: 1200px;
     }
 
-    .view-inventory-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .popup-content {
+        width: 600px;
     }
+
+
 
 }

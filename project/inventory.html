@@ -17,55 +17,128 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="icon" href="../project/images/favicon.ico">
         <script src ="../project/scripts/base.js" defer></script>
         <script src ="../project/scripts/inventory.js" defer></script>
     </head>
 <body>
     <header>
-
+        <div class="svg-background"></div>
+        <nav>
+            <div class="menu-text" id="menu-text">Menu</div>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="inventory">
-            <h2>Inventory</h2>
+            <h1>Inventory</h1>
             <div class="inventory-buttons">
                 <button id="openNewInventoryFormBtn">Report New Inventory</button>
-                <button id="openInventoryUsedFormBtn">Report Inventory Used</button>
             </div>
 
             <div id="newInventoryForm" class="popup-form">
                 <div class="popup-content">
                     <span id="closeNewInventoryFormBtn" class="close-btn">&times;</span>
                     <h2>Report New Inventory</h2>
-                    <form action="review.html" method="GET" id="newInventory">
-                        <label for="itemName">Item Name*: </label>
+                    <form action="review.html" method="GET" id="newInventory" onsubmit="saveToLocalStorage()">
+                        <label for="itemName">Item Name: </label>
                         <input type="text" id="itemName" name="itemName" required>
 
-                        <label for="membership-level"><select name="membership" id="membership-level">
-                            <option value="" disabled selected hidden>Select Membership</option>
-                        </select></label>
+                        <label for="color">Color: </label>
+                        <input type="text" id="color" name="color" required>
 
-                        <label for="amount">Amount:</label>
+                        <label for="amount">Material Amount:</label>
                         <input type="number" id="amount" name="amount" required>
+
+                        <fieldset>
+                            <legend>Material Size: </legend>
+                            <label for="roll">
+                                <input type="radio" id="roll" name="measure" value="roll" required>
+                                Roll
+                            </label>
+                            <label for="sheet">
+                                <input type="radio" id="sheet" name="measure" value="sheet" required>
+                                Sheet
+                            </label>
+                            <label for="piece">
+                                <input type="radio" id="piece" name="measure" value="piece" required>
+                                Piece
+                            </label>
+                            <label for="skein">
+                                <input type="radio" id="skein" name="measure" value="skein" required>
+                                Skein
+                            </label>
+                            <label for="spool">
+                                <input type="radio" id="spool" name="measure" value="spool" required>
+                                Spool
+                            </label>
+                        </fieldset>
+
+                        <label for="type">Material Type: </label>
+                        <select id="type" name="type" required>
+                            <option value="">Select Type</option>
+                            <option value="vinyl">Vinyl</option>
+                            <option value="felt">Felt</option>
+                            <option value="yarn">Yarn</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="ribbon">Ribbon</option>
+                        </select>
+                    
+                        <fieldset>
+                            <legend>Use (Select all that apply): </legend>
+                            <label for="craft">
+                                <input type="checkbox" id="craft" name="usage" value="Craft">
+                                Craft
+                            </label>
+                            <label for="hairbow">
+                                <input type="checkbox" id="hairbow" name="usage" value="Hairbow">
+                                Hairbow
+                            </label>
+                            <label for="fingerPuppet">
+                                <input type="checkbox" id="fingerPuppet" name="usage" value="Finger Puppet">
+                                Finger Puppet
+                            </label>
+                            <label for="purse">
+                                <input type="checkbox" id="purse" name="usage" value="Purse">
+                                Purse
+                            </label>
+                            <label for="wallet">
+                                <input type="checkbox" id="wallet" name="usage" value="Wallet">
+                                Wallet
+                            </label>
+                            <label for="clutch">
+                                <input type="checkbox" id="clutch" name="usage" value="Clutch">
+                                Clutch
+                            </label>
+                            <label for="wristStrap">
+                                <input type="checkbox" id="wristStrap" name="usage" value="Wrist Strap">
+                                Wrist Strap
+                            </label>
+                            <label for="handSanitizer">
+                                <input type="checkbox" id="handSanitizer" name="usage" value="Hand Sanitizer Holder">
+                                Hand Sanitizer Holder
+                            </label>
+                            <label for="knitting">
+                                <input type="checkbox" id="knitting" name="usage" value="Knitting">
+                                Knitting
+                            </label>
+                            <label for="crochet">
+                                <input type="checkbox" id="crochet" name="usage" value="Crochet">
+                                Crochet
+                            </label>
+                        </fieldset>
+                    
+                        <label for="image">Upload Image: </label>
+                        <input type="file" id="image" name="image" accept="image/*" required>
 
                         <button type="submit" class="submit-button">Submit Inventory</button>
 
                     </form>
                 </div>
-                <div id="inventoryUsedForm" class="popup-form">
-                    <div class="popup-content">
-                        <span id="closeInventoryUsedFormBtn" class="close-btn">&times;</span>
-                        <h2>Report Inventory Used</h2>
-                        <form action="review.html" method="GET" id="inventoryUsed">
-                            <label for="usedName">Item Name*: </label>
-                            <input type="text" id="usedName" name="usedName" required>
-
-                            <label for="usedAmount">Amount Used:</label>
-                            <input type="number" id="usedAmount" name="usedAmount" required>
-
-                            <button type="submit" class="submit-button">Submit Inventory</button>
-
-                        </form>
-                    </div>
                 </div>
             </div>
             

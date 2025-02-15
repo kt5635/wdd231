@@ -20,3 +20,7 @@ const date = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = date;
 });
 
+
+document.getElementById('viewInventoryBtn').addEventListener('click', function() {
+    window.location.href = 'inventory.html';
+});

@@ -55,4 +55,6 @@ function displayPatterns() {
     });
 }
 
+
+
 window.onload = displayPatterns;

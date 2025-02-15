@@ -6,7 +6,7 @@
         "amount": 2,
         "measure": "Roll",
         "image": "../project/images/summer-flowers.webp",
-        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+        "usage": ["Purse", "Wallet", "Clutch", "Hand Sanitizer Holder", "Wrist Strap"]
     },
 
     {
@@ -16,7 +16,7 @@
         "amount": 1,
         "measure": "Roll",
         "image": "../project/images/silver-fulidity.webp",
-        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+        "usage": ["Purse", "Wallet", "clutch", "Hand Sanitizer Holder", "Wrist Strap"]
     },
 
     {
@@ -26,7 +26,7 @@
         "amount": 1,
         "measure": "Roll",
         "image": "../project/images/hotpink-stardust.webp",
-        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+        "usage": ["Purse", "Wallet", "Clutch", "Hand Sanitizer Holder", "Wrist Strap"]
     },
 
     {
@@ -36,7 +36,7 @@
         "amount": 1,
         "measure": "Roll",
         "image": "../project/images/pink-geoglitter.webp",
-        "usage": ["Purse", "Wallet", "clutch", "hand sanitizer holder", "wrist strap"]
+        "usage": ["Purse", "Wallet", "Clutch", "Hand Sanitizer Holder", "Wrist Strap"]
     },
 
     {
@@ -46,7 +46,7 @@
         "amount": 86,
         "measure": "Piece",
         "image": "../project/images/silver-.75drings.webp",
-        "usage": ["Purse", "wrist strap"]
+        "usage": ["Purse", "Wrist Strap"]
     },
 
     {
@@ -56,7 +56,7 @@
         "amount": 86,
         "measure": "Piece",
         "image": "../project/images/gold-.75drings.webp",
-        "usage": ["Purse", "wrist strap"]
+        "usage": ["Purse", "Wrist Strap"]
     },
 
     {
@@ -66,7 +66,7 @@
         "amount": 37,
         "measure": "Piece",
         "image": "../project/images/gold-.75lobster-clasp.webp",
-        "usage": ["Purse", "Clutch", "hand sanitizer holder"]
+        "usage": ["Purse", "Clutch", "Hand Sanitizer Holder"]
     },
 
     {
@@ -76,7 +76,7 @@
         "amount": 61,
         "measure": "Piece",
         "image": "../project/images/silver-.75lobster-clasp.webp",
-        "usage": ["Purse", "Clutch", "hand sanitizer holder"]
+        "usage": ["Purse", "Clutch", "Hand Sanitizer Holder"]
     },
 
     {
@@ -86,7 +86,7 @@
         "amount": 23,
         "measure": "Sheet",
         "image": "../project/images/white-felt.webp",
-        "usage": ["Finger Puppets", "Crafts", "Hairbows"]
+        "usage": ["Finger Puppet", "Craft", "Hairbow"]
     },
 
     {
@@ -96,7 +96,7 @@
         "amount": 5,
         "measure": "Sheet",
         "image": "../project/images/green-felt.webp",
-        "usage": ["Finger Puppets", "Crafts", "Hairbows"]
+        "usage": ["Finger Puppet", "Craft", "Hairbow"]
     },
 
     {
@@ -106,7 +106,7 @@
         "amount": 3,
         "measure": "Sheet",
         "image": "../project/images/blue-felt.webp",
-        "usage": ["Finger Puppets", "Crafts", "Hairbows"]
+        "usage": ["Finger Puppet", "Craft", "Hairbow"]
     },
 
     {
@@ -116,7 +116,7 @@
         "amount": 2,
         "measure": "Spool",
         "image": "../project/images/red-ribbon.webp",
-        "usage": ["Crafts", "Hairbows"]
+        "usage": ["Craft", "Hairbow"]
     },
 
     {
@@ -126,7 +126,7 @@
         "amount": 2,
         "measure": "Spool",
         "image": "../project/images/black-ribbon.webp",
-        "usage": ["Crafts", "Hairbows"]
+        "usage": ["Craft", "Hairbow"]
     },
 
     {
@@ -136,7 +136,7 @@
         "amount": 2,
         "measure": "Spool",
         "image": "../project/images/white-ribbon.webp",
-        "usage": ["Crafts", "Hairbows"]
+        "usage": ["Craft", "Hairbow"]
     },
 
     {
@@ -146,7 +146,7 @@
         "amount": 1,
         "measure": "Skein",
         "image": "../project/images/white-yarn.webp",
-        "usage": ["knitting", "chrochet"]
+        "usage": ["Knitting", "Crochet "]
     },
 
     {
@@ -156,7 +156,7 @@
         "amount": 1,
         "measure": "Skein",
         "image": "../project/images/blue-yarn.webp",
-        "usage": ["knitting", "chrochet"]
+        "usage": ["Knitting", "Crochet "]
     },
 
     {
@@ -166,6 +166,6 @@
         "amount": 1,
         "measure": "Skein",
         "image": "../project/images/red-yarn.webp",
-        "usage": ["knitting", "chrochet"]
+        "usage": ["Knitting", "Crochet "]
     }
 ]
