@@ -31,6 +31,10 @@
     .inventory-buttons {
         flex-direction: row;
     }
+
+    .inventory button {
+        font-size: 24px;
+    }
  
     .supply-list ul {
         column-count: 2;  
@@ -42,7 +46,9 @@
     }
 
     .pattern-card-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 4rem;
     }
 
     .inventory-card {    
@@ -56,6 +62,13 @@
 
     .popup-content {
         width: 500px;
+    }
+
+    .step-card, .supply-list {
+        max-width: 600px;
+        grid-template-areas: 
+        "image header"
+        "image paragraph";
     }
 
 }
@@ -81,6 +94,10 @@
 
     .popup-content {
         width: 600px;
+    }
+
+    .step-card, .supply-list {
+        max-width: 1000px;
     }
 
 
