@@ -41,5 +41,5 @@ showInfo.innerHTML = `
 
 const imageBase64 = localStorage.getItem('imageBase64');
 if (imageBase64) {
-    document.querySelector('#reviewNewInventory').innerHTML += `<img src="${imageBase64}" alt="Item Image"/>`;
+    document.querySelector('#reviewNewInventory').innerHTML += `<img src="${imageBase64}" alt="Item Image" style="max-width: 300px; max-height: 300px; object-fit: contain;"/>`;
 }
